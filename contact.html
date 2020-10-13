@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: transparent;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        background-color: #ffffff;
+
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #DFE5EC;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .page1 {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        padding: 0px;
+        margin: 0px 0px;
+        
+    }
+
+    .page1>div {
+        padding: 0px 0px;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .hed {
+        height: 150px;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 80% 90%, 0 50%);
+        background-color: #DFE5EC;
+    }
+
+    .hed h2 {
+        font-size: 60px;
+        color: #2c3e50;
+        letter-spacing: 3px;
+        background-color: #DFE5EC;
+    }
+    
+    .sec h3 {
+        font-weight: lighter;
+        padding-left: 30px;
+
+    }
+
+    .sec h2 {
+        font-size: 40px;
+        color: #2c3e50;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .add div {
+        padding: 5px 0;
+        font-size: 18px;
+        font-family: 'Gabriela', serif;
+
+    }
+
+    .social-media {
+        padding: 20px 0;
+        z-index: 1;
+    }
+
+    .social-media i {
+        width: 60px;
+        height: 60px;
+        background: #0D2D39;
+        border-radius: 50%;
+        color: #f1f1f1;
+        font-size: 30px;
+        line-height: 60px !important;
+        margin: 0 10px;
+        position: relative;
+    }
+
+    .social-media i::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #0D2D39;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        border-radius: 50%;
+        z-index: -1;
+        transition: .4s linear;
+    }
+
+    .social-media i:hover::after {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+
+    .review-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+        padding-bottom: 30px;
+    }
+
+    .shadow {
+        background-color: #DFE5EC;
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        text-align: center;
+        justify-content: center;
+        text-transform: uppercase;
+        display: flex;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 10px 10px;
+    }
+
+    .shadow div {
+        background-color: #DFE5EC;
+
+    }
+
+    .shadow input {
+        margin-bottom: 15px;
+        width: 400px;
+        height: 25px;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+    }
+
+    .review-box textarea {
+        border: 1px solid #ffffff;
+
+    }
+
+    .review-box button {
+        width: 407px;
+        height: 35px;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #2c3e50;
+        border-color: #2c3e50;
+        border-radius: 4px;
+
+    }
+
+    .part6 {
+        height: 80px;
+    }
+
+    .bottom-section {
+        background: #d3d9e0;
+        height: 80px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: 'Gabriela', serif;
+    }
+
+    .bottom-section span {
+        font-size: 24px;
+        display: flex;
+        color: #0D2D39;
+        transition: .4s linear;
+        background: #d3d9e0;
+
+    }
+
+    .bottom-section span:hover {
+        transform: scale(1.4);
+    }
+
+    .border {
+        width: 1.5px;
+        height: 25px;
+        background: #2c3e50;
+        margin: 0 30px;
+    }
+    @media screen and (max-width: 460px) {
+        
+        header{
+            padding-left: 130px;
+
+        } 
+    }
+</style>
+
+<body>
+    <header>
+        <div class="page1">
+            <div class="hed">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="sec">
+                <h3>Lorem ipsum dolor sit, elit. Facilis, est. Provident
+                    tenetur distinctio neque, illum molestiae dolore officiis
+                    vitae ipsam porro ullam!</h3>
+                <h2>"Convert ideas into reality"</h2>
+                <div class="add">
+                    <div><i class="	fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;&nbsp;House No.34,Lorem ipsum dolor,Kapurthala,India</div>
+                    <div><i class=" fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;+91 3462849201</div>
+                    <div><i class=" fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;nidhisharma5241@gmail.com</div>
+                </div>
+
+                <div class="social-media">
+                    <a href="facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/nidhish60665123"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/nidhi_532"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.github.com/nidhi859"><i class="fa fa-github"></i></a>
+                </div>
+                <h2>Your reviews are valuable</h2>
+                <div class="review-box">
+                    <div class="shadow">
+                        <div>
+                            <div><input type="text" placeholder="Your name"></div>
+                            <div><input type="text" placeholder="Your email id"></div>
+                            <div><textarea name="text" cols="48" rows="10" placeholder="comment"></textarea></div>
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="part6">
+                <div class="bottom-section">
+                    <a href="about.html">
+                        <div class="subscribers"><span>ABOUT</span></div>
+                    </a>
+                    <div class="border"></div>
+                    <a href="work.html">
+                        <div class="views"><span>WORK</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
